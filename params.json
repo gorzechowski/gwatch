@@ -1,6 +1,6 @@
 {
   "name": "GWatch",
   "tagline": "",
-  "body": "### GWatch\r\nWelcome to GWatch page",
+  "body": "# Installation\r\n\r\n### 1. Download\r\n\r\nDownload GWatch's [latest release](https://github.com/gorzechowski/gwatchd/releases/latest) for Your operating system, unpack and run.\r\n\r\n### 2. Setup\r\n\r\nApplication initial view will be like this:\r\n\r\n![gwatch](https://cloud.githubusercontent.com/assets/4973929/17646250/400d0aba-61c2-11e6-846e-4317a82c4a03.png)\r\n\r\nAll You have to do is open menu by clicking top-left corner menu button and point to GWatchD's Websocket server:\r\n\r\n![gwatch](https://cloud.githubusercontent.com/assets/4973929/17646258/8b747a06-61c2-11e6-82df-73eb9d9040e2.png)\r\n\r\nGWatch will automatically connect to server and You will see:\r\n\r\n![gwatch](https://cloud.githubusercontent.com/assets/4973929/17646255/695cfff6-61c2-11e6-9ab5-609063610284.png)\r\n\r\nThat's all, done!",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
