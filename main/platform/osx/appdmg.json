@@ -1,0 +1,26 @@
+{
+    "title": "GWatch",
+    "icon": "icon-dock@2x.icns",
+    "icon-size": 64,
+    "background": "background@2x.png",
+    "contents": [
+        {
+            "x": 150,
+            "y": 150,
+            "type": "file",
+            "path": "../../../dist/osx/GWatch-darwin-x64/GWatch.app"
+        },
+        {
+            "x": 366,
+            "y": 150,
+            "type": "link",
+            "path": "/Applications"
+        }
+    ],
+    "window": {
+        "size": {
+            "width": 500,
+            "height": 300
+        }
+    }
+}
