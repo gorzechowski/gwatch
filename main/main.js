@@ -30,6 +30,10 @@ class Application {
 
         this.tray.setToolTip(this.trayText);
         this.tray.setContextMenu(contextMenu);
+
+        this.tray.on('click', () => {
+            this.mainWindow.show();
+        });
     }
 
     show = () => {
@@ -61,8 +65,12 @@ class Application {
             app.dock.setIcon(icon.getWindowIcon());
         }
 
-        ipcMain.on('close-clicked', () => {
+        ipcMain.on('quit-clicked', () => {
             app.quit();
+        });
+
+        ipcMain.on('close-clicked', () => {
+            this.mainWindow.hide();
         });
 
         ipcMain.on('minimize-clicked', () => {

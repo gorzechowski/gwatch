@@ -1,6 +1,7 @@
 import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {SynchronizeJobBar} from '../synchronize-job-bar/synchronize-job-bar';
+import {CommandJobBar} from '../command-job-bar/command-job-bar';
 import {appStore} from '../../stores/app';
 import {Settings as SettingsComponent} from '../settings/settings';
 import {ContextMenu} from '../context-menu/context-menu';
@@ -99,6 +100,7 @@ export class App extends React.Component {
                         this.state.connected ?
                             <div style={this.state.theme.app.content}>
                                 <SynchronizeJobBar />
+                                <CommandJobBar />
                             </div>
                         :
                             <NoConnection />

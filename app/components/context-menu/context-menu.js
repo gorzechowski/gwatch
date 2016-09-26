@@ -19,7 +19,7 @@ export class ContextMenu extends React.Component {
 
     onQuitClick = () => {
         if(this.context.ipc) {
-            this.context.ipc.send('close-clicked');
+            this.context.ipc.send('quit-clicked');
         }
     }
 

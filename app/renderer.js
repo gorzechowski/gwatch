@@ -12,6 +12,8 @@ injectTapEventPlugin();
 
 require('./style.css');
 
+let interval = null;
+
 var socket = new Socket();
 
 Settings.addListener('setting-changed', ({key, value}) => {
@@ -22,10 +24,19 @@ Settings.addListener('setting-changed', ({key, value}) => {
 
 socket.addListener('connected', () => {
     appStore.dispatch({type: 'CONNECTED'});
+
+    clearInterval(interval);
+    interval = null;
 });
 
 socket.addListener('disconnected', () => {
     appStore.dispatch({type: 'DISCONNECTED'});
+
+    if(interval === null) {
+        interval = setInterval(() => {
+            socket.connect();
+        }, 5000);
+    }
 });
 
 socket.addListener('event', (event) => {
