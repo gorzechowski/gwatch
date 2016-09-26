@@ -5,7 +5,11 @@ export default class Socket extends Observable {
 	ws;
 
 	connect = (host) => {
-		this.host = host;
+		if(typeof host === 'undefined') {
+			host = this.host;
+		} else {
+			this.host = host;
+		}
 
 		this.ws = new WebSocket(`ws://${this.host}`);
 
