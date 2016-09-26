@@ -3,7 +3,7 @@ import IconButton from 'material-ui/IconButton';
 import {Toolbar, ToolbarGroup, ToolbarTitle} from 'material-ui/Toolbar';
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
 import ActionInfoOutline from 'material-ui/svg-icons/action/info-outline';
-import Menu from 'material-ui/svg-icons/navigation/menu';
+import Settings from 'material-ui/svg-icons/action/settings';
 import ExpandMore from 'material-ui/svg-icons/navigation/expand-more';
 import {remote} from 'electron'
 
@@ -44,7 +44,7 @@ export class AppBar extends React.Component {
         return (
             <Toolbar style={this.context.theme.appBar.container}>
                 <ToolbarGroup firstChild={true}>
-                    {this.getIconButton(<Menu />, this.onMenuClick)}
+                    {this.getIconButton(<Settings />, this.onMenuClick)}
 
                     {this.getIconButton(<ActionInfoOutline />, this.onAboutClick)}
                 </ToolbarGroup>
