@@ -35,8 +35,9 @@
     "pack:osx": "npm run osx:app && npm run osx:dmg",
     "test": "npm run test:app",
     "test:app": "mocha --compilers js:babel-core/register test/app/*",
-    "cov": "npm run cov:app",
-    "cov:app": "babel-node ./node_modules/.bin/babel-istanbul cover --report text _mocha -- --compilers js:babel-core/register test/app/*",
+    "cov": "npm run clean && npm run cov:app",
+    "cov:app": "babel-node ./node_modules/.bin/babel-istanbul cover --include-all-sources true --report lcov _mocha -- --compilers js:babel-core/register test/app/*",
+    "clean": "rm -r dist || true",
     "storybook": "start-storybook -p 9001"
   },
   "dependencies": {
