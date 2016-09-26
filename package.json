@@ -2,7 +2,7 @@
   "name": "gwatch",
   "productName": "GWatch",
   "description": "Graphical interface for GWatchD",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "http://gorzechowski.github.io/gwatch",
   "author": {
     "name": "Gracjan Orzechowski",
