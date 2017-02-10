@@ -21,6 +21,12 @@ class Application {
 
         const contextMenu = Menu.buildFromTemplate([
             {
+                label: 'Restore',
+                click: () => {
+                    this.mainWindow.show();
+                }
+            },
+            {
                 label: 'Quit',
                 click: () => {
                     app.quit();
@@ -62,7 +68,7 @@ class Application {
         });
 
         if(process.platform === 'darwin') {
-            app.dock.setIcon(icon.getWindowIcon());
+            app.dock.hide();
         }
 
         ipcMain.on('quit-clicked', () => {
