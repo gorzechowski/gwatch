@@ -1,5 +1,8 @@
 ## CHANGELOG
 
+#### **0.2.1** _(13-02-2017)_
+- [Feature][[#10](https://github.com/gorzechowski/gwatch/issues/10)] Hide dock icon
+
 #### **0.2.0** _(26-09-2016)_
 - [Feature][[#3](https://github.com/gorzechowski/gwatch/issues/3)] Command job support
 - [Feature][[#4](https://github.com/gorzechowski/gwatch/issues/4)] Hiding main window
